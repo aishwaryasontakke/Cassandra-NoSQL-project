@@ -17,3 +17,5 @@ After making the above changes, both the nodes should have ports 7000 and 9042 o
 The application is designed using Python's Flask and queries the database for search, lookup, update, delete, etc. using Cassandra Query Language(CQL). Running app.py directs to the homepage of the application through which other pages can be navigated.
 
 ### Screenshots of the application ###
+
+![](https://github.com/aishwaryasontakke/1-D-classifier/blob/master/Mixed%20variance%20vs%20Age.png?raw=true)
