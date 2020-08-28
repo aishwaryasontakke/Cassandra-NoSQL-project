@@ -18,4 +18,12 @@ The application is designed using Python's Flask and queries the database for se
 
 ### Screenshots of the application ###
 
-![](https://github.com/aishwaryasontakke/1-D-classifier/blob/master/Mixed%20variance%20vs%20Age.png?raw=true)
+![](https://github.com/aishwaryasontakke/Cassandra-NoSQL-project/blob/master/images/Homepage.png?raw=true)
+
+![](https://github.com/aishwaryasontakke/Cassandra-NoSQL-project/blob/master/images/Login.png?raw=true)
+
+![](https://github.com/aishwaryasontakke/Cassandra-NoSQL-project/blob/master/images/Shopping.png?raw=true)
+
+![](https://github.com/aishwaryasontakke/Cassandra-NoSQL-project/blob/master/images/Bags.png?raw=true)
+
+![](https://github.com/aishwaryasontakke/Cassandra-NoSQL-project/blob/master/images/Purchase.png?raw=true)
