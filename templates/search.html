@@ -1,0 +1,21 @@
+{% extends 'base2.html' %}
+
+{% block head %}
+    <title>Flask Intro - login page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+      <br>
+      <form action="" method="post">
+        <input type="text" placeholder="search by brand" name="brand_search" value="{{
+          request.form.brand_search }}">
+        <input class="btn btn-default" type="submit" value="Search">
+      </form>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+      {% endif %}
+    </div>
+{% endblock %}

@@ -1,0 +1,95 @@
+{% extends 'base2.html' %}
+
+{% block head %}
+<title>Shopping Categories</title>
+    <style>
+        .card{
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 25px;
+        }
+        .card1{
+            width: 300px;
+            border-radius: 5px;
+            float: left;
+            text-align: center;
+            margin-left: 125px;
+        }
+        .card2{
+            width: 300px;
+            border-radius: 5px;
+            margin-left: 100px;
+            float: left;
+            text-align: center;
+        }
+        .card3{
+            width: 300px;
+            border-radius: 5px;
+            margin-left: 100px;
+            float: left;
+            text-align: center;
+        }
+        .card4{
+            width: 300px;
+            border-radius: 5px;
+            margin-left: 325px;
+            float: left;
+            text-align: center;
+        }
+        .card5{
+            width: 300px;
+            border-radius: 5px;
+            margin-left: 100px;
+            float: left;
+            text-align: center;
+        }
+        /* .name1{
+            padding: 2px 110px;
+            text-align: center;
+        } */
+        img{
+            border-radius: 5px 5px 5px 5px;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+
+<div class="card"><b>Shopping Categories</b></div>
+
+    <div class="card1">
+        <a href="http://localhost:5000/watches">
+        <img src="{{ url_for('static', filename='images/watch.jpg') }}" alt="Watch" style="width:300px">
+        </a>
+        <div class="name1">
+            <p><b>Watches</b></p>
+        </div>
+    </div>
+    <div class="card2">
+        <img src="{{ url_for('static', filename='images/clothing.jpg') }}" alt="Clothing" style="width:300px">
+        <div class="name1">
+            <p><b>Clothing</b></p>
+        </div>
+    </div>
+    <div class="card3">
+        <img src="{{ url_for('static', filename='images/shoes.jpg') }}" alt="Shoes" style="width:300px">
+        <div class="name1">
+            <p><b>Shoes</b></p>
+        </div>
+    </div>
+    <div class="card4">
+        <img src="{{ url_for('static', filename='images/electronics.jpeg') }}" alt="Electronics" style="width:300px">
+        <div class="name1">
+            <p><b>Electronics</b></p>
+        </div>
+    </div>
+    <div class="card5">
+        <a href="http://localhost:5000/bags">
+        <img src="{{ url_for('static', filename='images/bags.png') }}" alt="Bags" style="width:300px">
+        </a>
+        <div class="name1">
+            <p><b>Bags</b></p>
+        </div>
+    </div>
+
+{% endblock %}

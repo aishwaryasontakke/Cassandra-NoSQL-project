@@ -1,0 +1,186 @@
+{% extends 'base2.html' %}
+
+{% block head %}
+
+ <title>Bags</title>
+    <style>
+        .card{
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 25px;
+        }
+        .card11,.card21,.card31{
+            width: 260px;
+            border-radius: 5px;
+            float: left;
+            height: 400px;
+            padding-left: 50px;
+            /* text-align: center; */
+            /* margin-left: 100px; */
+        }
+        .card12,.card22,.card32{
+            width: 260px;
+            border-radius: 5px;
+            /* margin-left: 170px; */
+            float: left;
+            height: 400px;
+            /* text-align: center; */
+        }
+        .card13,.card23,.card33{
+            width: 260px;
+            border-radius: 5px;
+            /* margin-left: 200px; */
+            float: left;
+            height: 400px;
+            /* text-align: center; */
+        }
+        .card14,.card24,.card34{
+            width: 260px;
+            border-radius: 5px;
+            /* margin-left: 350px; */
+            float: left;
+            height: 400px;
+            /* text-align: center; */
+        }
+        .card15,.card25,.card35{
+            width: 260px;
+            border-radius: 5px;
+            /* margin-left: 200px; */
+            float: left;
+            height: 400px;
+            /* text-align: center; */
+        }
+        /* .name1{
+            padding: 2px 110px;
+            text-align: left;
+        } */
+        img{
+            border-radius: 5px 5px 5px 5px;
+        }
+    </style>
+
+{% endblock %}
+
+{% block body %}
+<div class="card"><b>Bags to choose from:</b></div>
+    <div class="card11">
+        <a href="http://localhost:5000/bags">
+        <img src="{{ url_for('static', filename='images/bag1.jpg') }}" alt="BagImage1" style="width:200px; height: 280px;">
+        </a>
+        <div class="name1" id="{{product_list[0].product_id}}">
+            <p><b>{{product_list[0].product_name}}&emsp;&nbsp;Q: </b>{{product_list[0].quantity}}
+                <form action="" method="post">
+                        <input type="hidden" name="id_remove" value="{{product_list[0].product_id}}">
+                        <input class="btn btn-default" type="submit" value="Purchase">
+                </form>
+        </div>
+    </div>
+    <div class="card12">
+        <a href="http://localhost:5000/bags">
+        <img src="{{ url_for('static', filename='images/bag2.jpg') }}" alt="BagImage2" style="width:200px; height: 280px;">
+        </a>
+        <div class="name1" id="{{product_list[1].product_id}}">
+            <p><b>{{product_list[1].product_name}}&emsp;&nbsp;Q: </b>{{product_list[1].quantity}}
+                <form action="" method="post">
+                        <input type="hidden" name="id_remove" value="{{product_list[1].product_id}}">
+                        <input class="btn btn-default" type="submit" value="Purchase">
+                </form>
+        </div>
+    </div>
+    <div class="card13">
+        <a href="http://localhost:5000/bags">
+        <img src="{{ url_for('static', filename='images/bag3.jpg') }}" alt="BagImage3" style="width:200px; height: 280px;">
+        </a>
+        <div class="name1" id="{{product_list[2].product_id}}">
+            <p><b>{{product_list[2].product_name}}&emsp;&nbsp;Q: </b>{{product_list[2].quantity}}
+                <form action="" method="post">
+                        <input type="hidden" name="id_remove" value="{{product_list[2].product_id}}">
+                        <input class="btn btn-default" type="submit" value="Purchase">
+                </form>
+        </div>
+    </div>
+    <div class="card14">
+        <a href="http://localhost:5000/bags">
+        <img src="{{ url_for('static', filename='images/bag4.jpg') }}" alt="BagImage4" style="width:200px; height: 280px;">
+        </a>
+        <div class="name1" id="{{product_list[3].product_id}}">
+            <p><b>{{product_list[3].product_name}}&emsp;&nbsp;Q: </b>{{product_list[3].quantity}}
+                <form action="" method="post">
+                        <input type="hidden" name="id_remove" value="{{product_list[3].product_id}}">
+                        <input class="btn btn-default" type="submit" value="Purchase">
+                </form>
+        </div>
+    </div>
+    <div class="card15">
+        <a href="http://localhost:5000/bags">
+        <img src="{{ url_for('static', filename='images/bag5.jpg') }}" alt="BagImage5" style="width:200px; height: 280px;">
+        </a>
+        <div class="name1" id="{{product_list[4].product_id}}">
+            <p><b>{{product_list[4].product_name}}&emsp;&nbsp;Q: </b>{{product_list[4].quantity}}
+                <form action="" method="post">
+                        <input type="hidden" name="id_remove" value="{{product_list[4].product_id}}">
+                        <input class="btn btn-default" type="submit" value="Purchase">
+                </form>
+        </div>
+    </div>
+    <div class="card21">
+        <a href="http://localhost:5000/bags">
+        <img src="{{ url_for('static', filename='images/bag6.jpg') }}" alt="BagImage6" style="width:200px; height: 280px;">
+        </a>
+        <div class="name1" id="{{product_list[5].product_id}}">
+            <p><b>{{product_list[5].product_name}}&emsp;&nbsp;Q: </b>{{product_list[5].quantity}}
+                <form action="" method="post">
+                        <input type="hidden" name="id_remove" value="{{product_list[5].product_id}}">
+                        <input class="btn btn-default" type="submit" value="Purchase">
+                </form>
+        </div>
+    </div>
+    <div class="card22">
+        <a href="http://localhost:5000/bags">
+        <img src="{{ url_for('static', filename='images/bag7.jpg') }}" alt="BagImage7" style="width:200px; height: 280px;">
+        </a>
+        <div class="name1" id="{{product_list[6].product_id}}">
+            <p><b>{{product_list[6].product_name}}&emsp;&nbsp;Q: </b>{{product_list[6].quantity}}
+                <form action="" method="post">
+                        <input type="hidden" name="id_remove" value="{{product_list[6].product_id}}">
+                        <input class="btn btn-default" type="submit" value="Purchase">
+                </form>
+        </div>
+    </div>
+    <div class="card23">
+        <a href="http://localhost:5000/bags">
+        <img src="{{ url_for('static', filename='images/bag8.jpg') }}" alt="BagImage8" style="width:200px; height: 280px;">
+        </a>
+        <div class="name1" id="{{product_list[7].product_id}}">
+            <p><b>{{product_list[7].product_name}}&emsp;&nbsp;Q: </b>{{product_list[7].quantity}}
+                <form action="" method="post">
+                        <input type="hidden" name="id_remove" value="{{product_list[7].product_id}}">
+                        <input class="btn btn-default" type="submit" value="Purchase">
+                </form>
+        </div>
+    </div>
+    <div class="card24">
+        <a href="http://localhost:5000/bags">
+        <img src="{{ url_for('static', filename='images/bag9.jpg') }}" alt="BagImage9" style="width:200px; height: 280px;">
+        </a>
+        <div class="name1" id="{{product_list[8].product_id}}">
+            <p><b>{{product_list[8].product_name}}&emsp;&nbsp;Q: </b>{{product_list[8].quantity}}
+                <form action="" method="post">
+                        <input type="hidden" name="id_remove" value="{{product_list[8].product_id}}">
+                        <input class="btn btn-default" type="submit" value="Purchase">
+                </form>
+        </div>
+    </div>
+    <div class="card25">
+        <a href="http://localhost:5000/bags">
+        <img src="{{ url_for('static', filename='images/bag10.jpg') }}" alt="BagImage10" style="width:200px; height: 280px;">
+        </a>
+        <div class="name1" id="{{product_list[9].product_id}}">
+            <p><b>{{product_list[9].product_name}}&emsp;&nbsp;Q: </b>{{product_list[9].quantity}}
+                <form action="" method="post">
+                        <input type="hidden" name="id_remove" value="{{product_list[9].product_id}}">
+                        <input class="btn btn-default" type="submit" value="Purchase">
+                </form>
+        </div>
+    </div>
+{% endblock %}
